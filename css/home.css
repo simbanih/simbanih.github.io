@@ -7,9 +7,18 @@
     --whitebg: #E5E5E5;
 }
 
-h1{
+
+
+.info{
     text-align: center;
-    margin: 10rem;
+    padding-top: 10rem;
+}
+
+.info-dora-page-404 img{
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+    top: 5px;
 }
 
 .card-co{
@@ -18,18 +27,20 @@ h1{
     margin-right: 3rem;
     margin-bottom: 4rem;
     display: grid;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .card {
-    max-width: 300px;
+    max-width: 320px;
     border-radius: 15px;
     background-color: #fff;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
 }
 
 .content {
@@ -40,7 +51,7 @@ h1{
     object-fit: cover;
     width: 100%;
     height: 150px;
-    background-color: #ffffff;
+    background-color: var(--blue);
 }
 
 .image img{
@@ -83,27 +94,69 @@ h1{
     transform: translateX(4px);
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1200px) {
     .card-co{
-        gap: 1rem;
+        
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
     }
    
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
+    .card-co{
+        gap: 1.2rem;
+        margin-right: 1.2rem;
+        margin-left: 1.2rem;
+    }
+
+    .title{
+        font-size: medium;
+    }
+
+    .desc{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 1000px) {
     .card-co{
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
-   
+
+    .card{
+        max-width: 440px;
+    }
+
+    .info{
+        text-align: center;
+        padding-top: 8rem;
+    }
 }
 
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 555px) {
     .card-co{
         grid-template-columns: repeat(1, 1fr);
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
     }
    
-    .image {
-        background-color: #ffffff;
+    .card{
+        max-width: 460px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .card-co{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+   
+    .card{
+        max-width: 460px;
     }
 }

@@ -175,7 +175,7 @@ button{
 }
 
 .footer-col {
-    width: 50%;
+    width: 100%;
     padding: 0 70px;
 }
 
@@ -270,7 +270,7 @@ button{
 
 /*---------------Responsif Navbar---------------*/
 
-@media screen and (max-width: 993px) {
+@media screen and (max-width: 1000px) {
     .navbar {
         padding: 30px;
     }
